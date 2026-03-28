@@ -1,0 +1,60 @@
+{
+  "name": "vite-backbone-ts",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Starter template for Backbone.js apps using Vite, TypeScript, Bootstrap, Handlebars, jQuery, and Underscore.",
+  "license": "MIT-0",
+  "author": {
+    "name": "Laurent Fortin",
+    "email": "laurent.fortin@gmail.com",
+    "url": "http://lfortin.github.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lfortin/vite-backbone-ts.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:cdn": "vite --config vite-cdn.config.ts",
+    "build": "vite build",
+    "build:cdn": "vite build --config vite-cdn.config.ts",
+    "build:visualize": "vite build --config vite.visualizer.config.ts",
+    "build:visualize:cdn": "vite build --config vite-cdn.visualizer.config.ts",
+    "preview": "vite preview",
+    "preview:cdn": "vite preview --config vite-cdn.config.ts",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "backbone": "^1.6.1",
+    "bootstrap": "^5.3.6",
+    "bootstrap-icons": "^1.13.1",
+    "handlebars": "^4.7.8",
+    "jquery": "^4.0.0",
+    "underscore": "^1.13.7"
+  },
+  "devDependencies": {
+    "@types/backbone": "^1.4.23",
+    "@types/handlebars": "^4.0.40",
+    "@types/jquery": "^4.0.0",
+    "@types/node": "^25.5.0",
+    "@types/underscore": "^1.13.0",
+    "@vitest/coverage-v8": "^4.0.7",
+    "@vitest/ui": "^4.0.18",
+    "jsdom": "^29.0.1",
+    "oxfmt": "^0.42.0",
+    "oxlint": "^1.49.0",
+    "rollup-plugin-visualizer": "^7.0.0",
+    "sass": "^1.93.2",
+    "vite": "^8.0.0",
+    "vitest": "^4.0.7"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [],
+  "categories": {
+    "correctness": "error"
+  },
+  "env": {
+    "builtin": true
+  },
+  "ignorePatterns": ["public/**", "dist/**", "coverage/**", "node_modules/**"],
+  "overrides": [
+    {
+      "files": ["**/*.{js,mjs,cjs,ts,mts,cts}"],
+      "env": {
+        "browser": true,
+        "jquery": true
+      },
+      "globals": {
+        "_": "readonly",
+        "Backbone": "readonly",
+        "Handlebars": "readonly"
+      }
+    },
+    {
+      "files": ["tests/**/*.{js,mjs,cjs,ts,mts,cts}"],
+      "env": {
+        "jquery": true,
+        "vitest": true
+      },
+      "globals": {
+        "_": "readonly",
+        "Backbone": "readonly",
+        "Handlebars": "readonly"
+      }
+    },
+    {
+      "files": ["tests/setup.ts"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}
