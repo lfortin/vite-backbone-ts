@@ -1,13 +1,10 @@
 // UseCaseCollection.ts
-import type { Collection } from "backbone";
 import UseCaseModel from "../models/UseCaseModel.ts";
-
-type UseCaseCollectionInstance = Collection & { _xhr?: JQuery.jqXHR | null };
 
 const UseCaseCollection = Backbone.Collection.extend({
   model: UseCaseModel,
 
-  sync: function (this: UseCaseCollectionInstance, ...args: Parameters<typeof Backbone.sync>) {
+  sync: function (...args: Parameters<typeof Backbone.sync>) {
     const xhr = Backbone.sync.apply(this, args);
     this._xhr = xhr;
 
@@ -18,7 +15,7 @@ const UseCaseCollection = Backbone.Collection.extend({
     return xhr;
   },
 
-  abort: function (this: UseCaseCollectionInstance) {
+  abort: function () {
     if (!this._xhr) return;
 
     this._xhr.abort();

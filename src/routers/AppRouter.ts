@@ -59,10 +59,9 @@ const AppRouter = Backbone.Router.extend({
     this._showView(help.render());
   },
 
-  blogIndex(page?: string) {
-    const pageNum = page !== undefined && page !== "" ? Number(page) : 1;
+  blogIndex(page: number = 1) {
     blogIndexView.collection.reset(blogPosts);
-    blogIndexView.setPage(Number.isFinite(pageNum) ? pageNum : 1);
+    blogIndexView.setPage(page);
     this._showView(blogIndexView);
   },
 

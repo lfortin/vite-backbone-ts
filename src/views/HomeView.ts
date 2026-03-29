@@ -1,5 +1,4 @@
 // HomeView.ts
-import type { View } from "backbone";
 import UseCaseCollection from "../collections/UseCaseCollection.ts";
 import { html } from "../util/tags.ts";
 
@@ -35,11 +34,11 @@ const HomeView = Backbone.View.extend({
     "click a.button-counter": "onCounterClick",
   },
 
-  onCounterClick(this: View, event: JQuery.TriggeredEvent) {
+  onCounterClick(event: JQuery.TriggeredEvent) {
     event.stopPropagation();
     event.preventDefault();
 
-    const cardId = $(event.target!).closest(".card").attr("data-model-id");
+    const cardId = $(event.target).closest(".card").attr("data-model-id");
     if (!cardId || !this.collection) return;
 
     const model = this.collection.get(cardId);
@@ -59,7 +58,7 @@ const HomeView = Backbone.View.extend({
 
   render() {
     const htmlOut = this.template({
-      usecases: this.collection!.toJSON(),
+      usecases: this.collection.toJSON(),
     });
 
     this.$el.html(htmlOut);

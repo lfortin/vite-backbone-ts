@@ -1,8 +1,4 @@
 // UseCaseModel.ts
-import type { Model } from "backbone";
-
-type UseCaseModelInstance = Model & { _xhr?: JQuery.jqXHR | null };
-
 const UseCaseModel = Backbone.Model.extend({
   defaults: {
     title: "",
@@ -12,7 +8,7 @@ const UseCaseModel = Backbone.Model.extend({
     counter: 0,
   },
 
-  sync: function (this: UseCaseModelInstance, ...args: Parameters<typeof Backbone.sync>) {
+  sync: function (...args: Parameters<typeof Backbone.sync>) {
     const xhr = Backbone.sync.apply(this, args);
     this._xhr = xhr;
 
@@ -23,7 +19,7 @@ const UseCaseModel = Backbone.Model.extend({
     return xhr;
   },
 
-  abort: function (this: UseCaseModelInstance) {
+  abort: function () {
     if (!this._xhr) return;
 
     this._xhr.abort();
