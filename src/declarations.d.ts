@@ -1,8 +1,5 @@
-// Allow TypeScript to recognize SCSS files as modules
-declare module "*.scss" {
-  const content: { [className: string]: string };
-  export default content;
-}
+// declarations.d.ts
 
-// Optional: Do the same for CSS if you use it
+// Allow TypeScript to recognize SCSS and CSS files as modules
+declare module "*.scss";
 declare module "*.css";
