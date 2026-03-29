@@ -12,6 +12,7 @@ Minimal Backbone.js starter template powered by Vite.
 - Handlebars templates for view-layer markup generation
 - Bootstrap 5 for styling
 - jQuery + Underscore as Backbone dependencies
+- TypeScript for type-safe development
 - Vite for bundling and dev server
 - Vitest for unit tests
 - Oxlint for code quality
