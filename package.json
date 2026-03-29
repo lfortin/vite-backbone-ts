@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@types/backbone": "^1.4.23",
+    "@types/bootstrap": "^5.2.10",
     "@types/handlebars": "^4.0.40",
     "@types/jquery": "^4.0.0",
     "@types/node": "^25.5.0",

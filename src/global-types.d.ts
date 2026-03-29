@@ -1,3 +1,4 @@
+// global-types.d.ts
 declare global {
   const $: typeof import("jquery").default;
   const jQuery: typeof import("jquery").default;
