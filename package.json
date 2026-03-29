@@ -17,10 +17,10 @@
   "scripts": {
     "dev": "vite",
     "dev:cdn": "vite --config vite-cdn.config.ts",
-    "build": "vite build",
-    "build:cdn": "vite build --config vite-cdn.config.ts",
-    "build:visualize": "vite build --config vite.visualizer.config.ts",
-    "build:visualize:cdn": "vite build --config vite-cdn.visualizer.config.ts",
+    "build": "tsc && vite build",
+    "build:cdn": "tsc && vite build --config vite-cdn.config.ts",
+    "build:visualize": "tsc && vite build --config vite.visualizer.config.ts",
+    "build:visualize:cdn": "tsc && vite build --config vite-cdn.visualizer.config.ts",
     "preview": "vite preview",
     "preview:cdn": "vite preview --config vite-cdn.config.ts",
     "lint": "oxlint",
@@ -55,6 +55,7 @@
     "oxlint": "^1.49.0",
     "rollup-plugin-visualizer": "^7.0.0",
     "sass": "^1.93.2",
+    "typescript": "^6.0.2",
     "vite": "^8.0.0",
     "vitest": "^4.0.7"
   }
