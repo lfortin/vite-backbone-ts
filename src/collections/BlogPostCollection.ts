@@ -1,7 +1,8 @@
 // BlogPostCollection.ts
+import BaseCollection from "./BaseCollection.ts";
 import BlogPostModel from "../models/BlogPostModel.ts";
 
-const BlogPostCollection = Backbone.Collection.extend({
+const BlogPostCollection = BaseCollection.extend({
   model: BlogPostModel,
 });
 

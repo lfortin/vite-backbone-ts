@@ -1,5 +1,7 @@
 // BlogPostModel.ts
-const BlogPostModel = Backbone.Model.extend({
+import BaseModel from "./BaseModel.ts";
+
+const BlogPostModel = BaseModel.extend({
   idAttribute: "slug",
 
   defaults: {
