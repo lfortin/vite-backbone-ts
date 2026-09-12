@@ -6,7 +6,7 @@
 [![Backbone.js](https://img.shields.io/badge/Backbone.js-^1.6-blue?logo=javascript)](https://backbonejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![License: MIT-0](https://img.shields.io/badge/License-MIT--0-yellow.svg)](LICENSE)
-[![Vitest](https://img.shields.io/badge/Vitest-^4.0-729b1b?logo=vitest)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Vitest-^5.0-729b1b?logo=vitest)](https://vitest.dev/)
 [![Oxc](https://img.shields.io/badge/Oxc-Rust--Powered-orange?logo=rust)](https://oxc.rs/)
 
 ---
