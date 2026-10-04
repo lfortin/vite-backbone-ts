@@ -41,7 +41,6 @@ Minimal Backbone.js starter template powered by Vite.
 ## Non-Goals
 
 - No SSR
-- No backend
 - No state management frameworks
 - No heavy UI libraries
 
