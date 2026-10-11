@@ -93,8 +93,6 @@ To run all tests:
 npm run test
 ```
 
----
-
 ## 📏 Linting Code
 
 This project uses [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) with a modern configuration tailored for Backbone, Handlebars, jQuery, Underscore and Vitest.
@@ -105,7 +103,16 @@ To run the linter:
 npm run lint
 ```
 
----
+## Minimal template (Backbone.js + jQuery + Underscore)
+
+A clean, demo-free starting point if you only need the core stack without extra UI frameworks or templating libraries (uses `index-basic.html`, `src/main-basic.ts` and `styles/style-basic.css`).
+
+```bash
+npm run dev:basic
+npm run build:basic
+```
+
+[![basic template screenshot](https://github.com/lfortin/vite-backbone-ts/blob/main/public/screenshot-basic.png?raw=true)](https://github.com/lfortin/vite-backbone-ts/blob/main/public/screenshot-basic.png?raw=true)
 
 ## 📄 License
 
