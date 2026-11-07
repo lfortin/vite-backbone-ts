@@ -17,7 +17,4 @@ export default defineConfig({
       },
     },
   },
-  server: {
-    open: "/index-basic.html",
-  },
 });

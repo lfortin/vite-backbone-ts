@@ -1,7 +1,6 @@
 import { defineHandler } from "nitro";
 
 export default defineHandler(async (event) => {
-  console.log(event);
   return [
     { id: 1, username: "user1" },
     { id: 2, username: "user2" },
